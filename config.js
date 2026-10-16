@@ -1,6 +1,6 @@
 // Contact details shown on every page. Fill these in once, and every page updates.
 window.SITE = {
-  email: "",
+  email: "info@mutualbiz.ca",
   phone: ""
 };
 
