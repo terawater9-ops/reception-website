@@ -14,7 +14,7 @@ window.SITE = {
   function demoLine(s) {
     return '<p class="demo-line"><span class="demo-dot" aria-hidden="true"></span>' +
       'Hear it now: call <a href="' + telHref(s.demoPhone) + '">' + s.demoPhone + '</a>' +
-      '<span class="demo-note">Our sample receptionist answers as Lakeshore Plumbing, a demo company. Ask it anything.</span></p>';
+      '<span class="demo-note">Our sample receptionist answers as Lakeshore Plumbing, a demo company. Ask it anything. Demo calls are limited to 3 calls of up to 3 minutes each.</span></p>';
   }
 
   function form(s) {
