@@ -323,3 +323,11 @@ details p { color: var(--muted); margin: 10px 0 0; }
   .call { grid-template-columns: 36px 1fr; }
   .call-time { grid-column: 2; }
 }
+
+/* Legal pages */
+.legal .wrap { max-width: 760px; }
+.legal h1 { margin-bottom: 4px; }
+.legal h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+.legal p, .legal li { line-height: 1.6; }
+.legal ul { padding-left: 1.2em; }
+.site-footer a { color: inherit; }

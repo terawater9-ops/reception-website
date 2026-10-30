@@ -42,7 +42,7 @@ window.SITE = {
         '<label><span>Phone <span class="opt">(optional)</span></span><input type="tel" name="phone" autocomplete="tel"></label>' +
       '</div>' +
       '<button class="btn" type="submit">Get my free demo</button>' +
-      '<p class="fine">We\'ll email you a demo line that answers with your business name. No commitment.</p>' +
+      '<p class="fine">We\'ll email you a demo line that answers with your business name. No commitment. See our <a href="privacy.html">privacy policy</a>.</p>' +
       '</form>';
   }
 
