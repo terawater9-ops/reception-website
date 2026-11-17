@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Set Up Your Free Trial | Mutual Small Business Consulting</title>
+  <meta name="description" content="Tell us about your business and we'll set up your AI receptionist for a free 14-day trial. No credit card needed.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Mutual Small Business Consulting<small>AI reception services</small></a>
+      <nav class="nav" aria-label="Main">
+        <a href="trades.html">For trades</a>
+        <a href="clinics.html">For clinics</a>
+        <a href="index.html#pricing">Pricing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="setup">
+      <div class="wrap">
+        <h1>Set up your free trial</h1>
+        <p class="lede">Tell us how you want your calls handled. We build your receptionist from this form and email you within one business day to test it. The trial is free for 14 days, and no credit card is needed.</p>
+
+        <form class="demo-form setup-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="5509a374-cb43-4881-8d43-927cb2e8f5b7">
+          <input type="hidden" name="subject" value="New trial setup: AI receptionist">
+          <input type="hidden" name="from_name" value="mutualbiz.ca setup form">
+          <input type="hidden" name="redirect" value="https://www.mutualbiz.ca/setup-thanks.html">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <fieldset>
+            <legend>Your business</legend>
+            <div class="field-row">
+              <label>Your name<input name="owner_name" required autocomplete="name"></label>
+              <label>Business name<input name="business" required autocomplete="organization"></label>
+            </div>
+            <div class="field-row">
+              <label>Type of business<select name="trade" id="trade" required>
+                <option value="">Choose one</option>
+                <option>Plumbing</option>
+                <option>HVAC / heating and cooling</option>
+                <option>Electrical</option>
+                <option>Other trade</option>
+              </select></label>
+              <label>People in the field<select name="team_size" required>
+                <option value="">Choose one</option>
+                <option>Just me</option><option>2 to 5</option><option>6 to 15</option><option>More than 15</option>
+              </select></label>
+            </div>
+            <div class="field-row">
+              <label>Email for setup and billing<input type="email" name="email" required autocomplete="email"></label>
+              <label>Your mobile, for call summaries by text<input type="tel" name="mobile" required autocomplete="tel"></label>
+            </div>
+            <div class="field-row">
+              <label>The business number your customers call<input type="tel" name="business_phone" required></label>
+              <label><span>Website <span class="opt">(optional)</span></span><input type="url" name="website" placeholder="https://"></label>
+            </div>
+            <label>Cities or areas you serve<input name="service_area" required placeholder="e.g. Mississauga, Brampton, Oakville"></label>
+            <label>How should your receptionist answer the phone?<input name="greeting" required placeholder="e.g. Thanks for calling Lakeshore Plumbing"></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your services</legend>
+            <label>What jobs do you do?<textarea name="services" rows="4" required placeholder="e.g. Leaks and burst pipes, drain cleaning, water heaters, sump pumps, bathroom renovations"></textarea></label>
+            <label><span>Jobs you do NOT take <span class="opt">(optional)</span></span><textarea name="services_not" rows="2" placeholder="e.g. No commercial work, no septic systems"></textarea></label>
+            <div class="field-row">
+              <label>Do you charge a service-call fee?<input name="service_fee" required placeholder="e.g. $149 for the first hour, or No"></label>
+              <label>Free estimates?<select name="free_estimates" required>
+                <option value="">Choose one</option><option>Yes, free estimates</option><option>Estimates for larger jobs only</option><option>No</option>
+              </select></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Hours and which calls it answers</legend>
+            <label>Your business hours<textarea name="hours" rows="2" required placeholder="e.g. Mon to Fri 8 am to 6 pm, Sat 9 am to 2 pm, closed Sunday"></textarea></label>
+            <label>Which calls should your receptionist answer?<select name="answer_when" required>
+              <option value="">Choose one</option>
+              <option>Missed calls and after hours only</option>
+              <option>All calls, all the time</option>
+              <option>After hours and weekends only</option>
+            </select></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Bookings</legend>
+            <div class="field-row">
+              <label>How should bookings work?<select name="booking_mode" required>
+                <option value="">Choose one</option>
+                <option>Take the request, I confirm the time</option>
+                <option>Book straight into my calendar</option>
+              </select></label>
+              <label>Which calendar or software do you use?<select name="calendar" required>
+                <option value="">Choose one</option>
+                <option>Google Calendar</option><option>Outlook calendar</option><option>Jobber</option><option>Housecall Pro</option>
+                <option>ServiceTitan</option><option>Paper or none</option><option>Other</option>
+              </select></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Urgent calls</legend>
+            <label>What counts as an emergency for you?<textarea name="emergencies" rows="3" required>Burst pipe or active flooding, no water, sewer backup, no heat in winter</textarea></label>
+            <div class="field-row">
+              <label>What should happen with an emergency?<select name="emergency_action" required>
+                <option value="">Choose one</option>
+                <option>Forward the call to me right away, any time</option>
+                <option>Forward during my hours, text me after hours</option>
+                <option>Text me right away, don't forward</option>
+              </select></label>
+              <label>Number for urgent calls<input type="tel" name="emergency_phone" required></label>
+            </div>
+            <p class="note">If a caller mentions a gas smell, your receptionist always tells them to leave the building and call the gas company or 911 first.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Summaries, plan and language</legend>
+            <div class="field-row">
+              <label>Send me each call summary by<select name="summary_by" required>
+                <option>Text and email</option><option>Text only</option><option>Email only</option>
+              </select></label>
+              <label>Plan you'd like after the trial<select name="plan" required>
+                <option value="">Choose one</option>
+                <option>Not sure yet, help me choose</option>
+                <option>Starter, $14.99</option><option>Solo, $29</option><option>Trades, $49</option>
+                <option>Growth, $99</option><option>Pro, $179</option><option>Business, $399</option>
+              </select></label>
+            </div>
+            <label>Second language for callers <span class="opt">(optional, $10 a month after the trial)</span><select name="second_language">
+              <option>English only</option><option>Arabic</option><option>Farsi</option><option>Hindi</option><option>Italian</option>
+              <option>Mandarin</option><option>Cantonese</option><option>Polish</option><option>Portuguese</option><option>Punjabi</option>
+              <option>Spanish</option><option>Tagalog</option><option>Urdu</option><option>Other</option>
+            </select></label>
+            <label><span>Questions customers often ask, with your answers <span class="opt">(optional)</span></span><textarea name="faq" rows="4" placeholder="e.g. Do you work weekends? Yes, Saturdays until 2 pm. Are you licensed and insured? Yes."></textarea></label>
+          </fieldset>
+
+          <label class="check"><input type="checkbox" name="agree" value="yes" required> I agree to the <a href="terms.html">terms</a> and <a href="privacy.html">privacy policy</a>, and I understand callers are told they're speaking with an automated assistant.</label>
+
+          <button class="btn" type="submit">Start my free trial</button>
+          <p class="fine">No credit card needed. Before the trial ends, we email you a summary of the calls it answered and a link to subscribe if you want to keep it.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Mutual Small Business Consulting · 55 Village Centre Place, Mississauga, ON L4Z 1V9 · <a href="mailto:info@mutualbiz.ca">info@mutualbiz.ca</a></p>
+      <p>AI reception services for Ontario businesses. <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="https://billing.stripe.com/p/login/7sY3cu4XI2ITfHadEU1kA00">Manage your subscription</a></p>
+    </div>
+  </footer>
+  <script>
+    // Pre-select the trade from a link like setup.html?trade=Plumbing
+    (function () {
+      var t = new URLSearchParams(location.search).get("trade");
+      var sel = document.getElementById("trade");
+      if (!t || !sel) return;
+      for (var i = 0; i < sel.options.length; i++) {
+        if (sel.options[i].text.toLowerCase().indexOf(t.toLowerCase()) === 0) { sel.selectedIndex = i; break; }
+      }
+    })();
+  </script>
+</body>
+</html>
