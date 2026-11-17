@@ -5,7 +5,17 @@ window.SITE = {
   // Live demo line: answered by our sample receptionist for "Lakeshore Plumbing".
   demoPhone: "365-517-2724",
   // Web3Forms access key for info@mutualbiz.ca. The demo request form appears once this is set.
-  formKey: "5509a374-cb43-4881-8d43-927cb2e8f5b7"
+  formKey: "5509a374-cb43-4881-8d43-927cb2e8f5b7",
+  // Stripe payment links WITH the 7-day free trial. Leave a link empty until its trial is switched on in Stripe:
+  // an empty link is never shown, so no one is charged without a trial.
+  trialLinks: {
+    "Starter, $14.99 a month": "",
+    "Solo, $29 a month": "",
+    "Trades, $49 a month": "",
+    "Growth, $99 a month": "",
+    "Pro, $179 a month": "",
+    "Business, $399 a month": ""
+  }
 };
 
 (function () {
@@ -50,6 +60,15 @@ window.SITE = {
     var s = window.SITE || {};
     document.querySelectorAll("[data-demo]").forEach(function (el) {
       if (s.demoPhone) el.innerHTML = demoLine(s);
+    });
+    document.querySelectorAll("[data-plans]").forEach(function (el) {
+      var links = s.trialLinks || {}, items = [];
+      Object.keys(links).forEach(function (name) {
+        if (links[name]) items.push('<li><a class="btn secondary" href="' + links[name] + '">' + name + '</a></li>');
+      });
+      el.innerHTML = items.length
+        ? '<p><strong>Choose your plan to start the free trial:</strong></p><ul class="plan-links">' + items.join("") + '</ul>'
+        : '<p class="mail-line">We\'ll email you a secure link to add your card and start your trial within one business day.</p>';
     });
     document.querySelectorAll("[data-contact]").forEach(function (el) {
       var parts = [];
