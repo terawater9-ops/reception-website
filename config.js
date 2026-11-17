@@ -9,12 +9,12 @@ window.SITE = {
   // Stripe payment links WITH the 7-day free trial. Leave a link empty until its trial is switched on in Stripe:
   // an empty link is never shown, so no one is charged without a trial.
   trialLinks: {
-    "Starter, $14.99 a month": "",
-    "Solo, $29 a month": "",
-    "Trades, $49 a month": "",
-    "Growth, $99 a month": "",
-    "Pro, $179 a month": "",
-    "Business, $399 a month": ""
+    "Starter, $14.99 a month": "https://buy.stripe.com/7sY3cu4XI2ITfHadEU1kA00",
+    "Solo, $29 a month": "https://buy.stripe.com/cNi28qbm62IT0Mg7gw1kA01",
+    "Trades, $49 a month": "https://buy.stripe.com/28EbJ09dYgzJ52wfN21kA02",
+    "Growth, $99 a month": "https://buy.stripe.com/5kQ3cufCm2ITfHa44k1kA03",
+    "Pro, $179 a month": "https://buy.stripe.com/14A7sKgGq5V50Mg44k1kA04",
+    "Business, $399 a month": "https://buy.stripe.com/cNi00ibm66Z9amQ30g1kA06"
   }
 };
 
